@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Fast Blaze";
+  src: url("fast-blaze.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; margin: 0; }
+
+body { background: #000; }
+
+.landing {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(2.5rem, 10vh, 7rem) 1.5rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: clamp(128px, 16vw, 210px);
+  height: auto;
+  margin-bottom: clamp(2.75rem, 7vh, 5rem);
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Fast Blaze", Arial, sans-serif;
+  font-size: clamp(2.3rem, 6vw, 4.8rem);
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1;
+}
+
+p {
+  margin: 1.4rem 0 0;
+  color: #fff;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.projects {
+  margin-top: 4.25rem;
+}
+
+.projects h2 {
+  margin: 0 0 0.8rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.secondary-links {
+  margin-top: 1rem;
+}
+
+.site-links a {
+  color: inherit;
+}
+
+.site-links button {
+  border-radius: 0;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.15rem 0.45rem;
+}
